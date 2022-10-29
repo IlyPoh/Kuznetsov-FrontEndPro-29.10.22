@@ -6,7 +6,7 @@ console.log(`Hours: ${convertingHours}`);
 
 // Checking if number of hours more or equals 0 and giving user the result
 if (convertingHours >= 0) {
-    convertingHours *= 60;
+    convertingHours *= 3600;
 
     console.log(`That's how many seconds in those hours: ${convertingHours}`);
     alert(`That's how many seconds in those hours: ${convertingHours}`);
