@@ -1,16 +1,16 @@
 // Asking user for numbers
-const firstNumber = prompt('Lets do some math, enter first number', 1);
-const secondNumber = prompt('Ok, now enter second number', 1);
+const firstNumber = parseInt(prompt('Lets do some math, enter first number', 1));
+const secondNumber = parseInt(prompt('Ok, now enter second number', 1));
 
 // Displaying those numbers in console
 console.log(`First number: ${firstNumber}`);
 console.log(`Second number: ${secondNumber}`);
 
 // Simple math
-const mathPlus = (parseInt(firstNumber)+parseInt(secondNumber));
-const mathMinus = (parseInt(firstNumber)-parseInt(secondNumber));
-const mathMultiplication = (parseInt(firstNumber)*parseInt(secondNumber));
-const mathDivision = (parseInt(firstNumber)/parseInt(secondNumber));
+const mathPlus = firstNumber + secondNumber;
+const mathMinus = firstNumber - secondNumber;
+const mathMultiplication = firstNumber * secondNumber;
+const mathDivision = firstNumber / secondNumber;
 
 // Displaying results
 console.log(`Ok, here's ur results:
