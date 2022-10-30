@@ -2,38 +2,38 @@
 const mathOperation = prompt('Hi! Choose operation u want to do (add, sub, mult, div, +, -, *, /)')
 
 // Asking user for numbers
-const firstNumber = parseInt(prompt('Lets do some math, enter first number', 1));
-const secondNumber = parseInt(prompt('Ok, now enter second number', 1));
+const firstNumberConvert = parseInt(prompt('Lets do some math, enter first number', 1));
+const secondNumberConvert = parseInt(prompt('Ok, now enter second number', 1));
 
 // Displaying operation and numbers in console
 console.log(`Operation: ${mathOperation}`);
-console.log(`First number: ${firstNumber}`);
-console.log(`Second number: ${secondNumber}`);
+console.log(`First number: ${firstNumberConvert}`);
+console.log(`Second number: ${secondNumberConvert}`);
 
 // Checking if user entered a number
-if (isNaN(firstNumber) || isNaN(secondNumber)) {
+if (isNaN(firstNumberConvert) || isNaN(secondNumberConvert)) {
     console.log('You did something wrong, please start from the beggining')
     alert('You did something wrong, please start from the beggining')
 } else {
     // Simple math
-    const mathPlus = firstNumber + secondNumber;
-    const mathMinus = firstNumber - secondNumber;
-    const mathMultiplication = firstNumber * secondNumber;
-    const mathDivision = firstNumber / secondNumber;
+    const mathPlusConvert = firstNumberConvert + secondNumberConvert;
+    const mathMinusConvert = firstNumberConvert - secondNumberConvert;
+    const mathMultiplicationConvert = firstNumberConvert * secondNumberConvert;
+    const mathDivisionConvert = firstNumberConvert / secondNumberConvert;
 
     // Displaying result
     if (mathOperation == "add" || mathOperation == "+") {
-        console.log (`Ok, here's ur result:\n${firstNumber} + ${secondNumber} = ${mathPlus}`);
-        alert(`Ok, here's ur result:\n${firstNumber} + ${secondNumber} = ${mathPlus}`);
+        console.log (`Ok, here's ur result:\n${firstNumberConvert} + ${secondNumberConvert} = ${mathPlusConvert}`);
+        alert(`Ok, here's ur result:\n${firstNumberConvert} + ${secondNumberConvert} = ${mathPlusConvert}`);
     } else if (mathOperation == "sub" || mathOperation == "-") {
-        console.log (`Ok, here's ur result:\n${firstNumber} - ${secondNumber} = ${mathMinus}`);
-        alert(`Ok, here's ur result:\n${firstNumber} - ${secondNumber} = ${mathMinus}`);
+        console.log (`Ok, here's ur result:\n${firstNumberConvert} - ${secondNumberConvert} = ${mathMinusConvert}`);
+        alert(`Ok, here's ur result:\n${firstNumberConvert} - ${secondNumberConvert} = ${mathMinusConvert}`);
     } else if (mathOperation == "mult" || mathOperation == "*") {
-        console.log (`Ok, here's ur result:\n${firstNumber} * ${secondNumber} = ${mathMultiplication}`);
-        alert(`Ok, here's ur result:\n${firstNumber} * ${secondNumber} = ${mathMultiplication}`);
+        console.log (`Ok, here's ur result:\n${firstNumberConvert} * ${secondNumberConvert} = ${mathMultiplicationConvert}`);
+        alert(`Ok, here's ur result:\n${firstNumberConvert} * ${secondNumberConvert} = ${mathMultiplicationConvert}`);
     } else if (mathOperation == "div" || mathOperation == "/") {
-        console.log (`Ok, here's ur result:\n${firstNumber} / ${secondNumber} = ${mathDivision}`);
-        alert(`Ok, here's ur result:\n${firstNumber} / ${secondNumber} = ${mathDivision}`);
+        console.log (`Ok, here's ur result:\n${firstNumberConvert} / ${secondNumberConvert} = ${mathDivisionConvert}`);
+        alert(`Ok, here's ur result:\n${firstNumberConvert} / ${secondNumberConvert} = ${mathDivisionConvert}`);
     } else {
         console.log ("You did smth wrong, refresh and start from beggining");
         alert("You did smth wrong, refresh and start from beggining");
